@@ -1,39 +1,71 @@
-## Spring Boot WebSocket Chat Appplication
+# 🚀 Real-Time Messaging Platform
 
-You can checkout the live version of the application at https://spring-ws-chat.herokuapp.com/
+A real-time messaging system built using **Spring Boot** and **WebSocket (STOMP)** to enable low-latency, bidirectional communication between multiple users.
 
-![App Screenshot](screenshot.png)
+---
 
-## Requirements
+## ✨ Features
 
-1. Java - 11
+* 🔄 Real-time bidirectional communication
+* 👥 Multi-user chat support
+* 📡 Message broadcasting using WebSockets
+* ⚡ Low-latency event-driven architecture
+* 🔌 Persistent connection handling
 
-2. Maven - 3.x.x
+---
 
-## Steps to Setup
+## 🛠 Tech Stack
 
-**1. Clone the application**
+* **Backend:** Java, Spring Boot
+* **Protocol:** WebSocket (STOMP)
+* **Build Tool:** Maven
 
-```bash
-git clone https://github.com/callicoder/spring-boot-websocket-chat-demo.git
+---
+
+## 🧠 System Design Overview
+
+* Clients establish a persistent WebSocket connection with the server
+* Messages are routed using the STOMP protocol
+* Server handles concurrent users using asynchronous event-driven processing
+* Reduces latency compared to traditional HTTP-based communication
+
+---
+
+## 📂 Project Structure
+
+```
+src/main/java       → Backend logic  
+src/main/resources  → Configuration files  
+pom.xml             → Dependencies  
 ```
 
-**2. Build and run the app using maven**
+---
+
+## ▶️ How to Run
 
 ```bash
-cd spring-boot-websocket-chat-demo
-mvn package
-java -jar target/websocket-demo-0.0.1-SNAPSHOT.jar
+# Clone the repository
+git clone https://github.com/ReetuPailla/real-time-messaging-platform.git
+
+# Navigate into project
+cd real-time-messaging-platform
+
+# Run the application
+./mvnw spring-boot:run
 ```
 
-Alternatively, you can run the app directly without packaging it like so -
+Then open your browser:
+http://localhost:8080
 
-```bash
-mvn spring-boot:run
-```
+---
 
-## Learn More
+## 👨‍💻 Author
 
-You can find the tutorial for this application on my blog -
+Reetu Pailla
 
-https://www.callicoder.com/spring-boot-websocket-chat-example/
+---
+
+## 🔗 GitHub
+
+https://github.com/ReetuPailla/real-time-messaging-platform
+
