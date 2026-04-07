@@ -3,6 +3,11 @@
 A real-time messaging system built using **Spring Boot** and **WebSocket (STOMP)** to enable low-latency, bidirectional communication between multiple users.
 
 ---
+## 📸 Preview
+
+![App Screenshot](screenshot.png)
+
+---
 
 ## ✨ Features
 
